@@ -1,21 +1,21 @@
 const timelineEvents = [
     {
-        quarter: 'Q3 2024',
+        quarter: 'Q3 2025',
         title: 'Closed Pilot Program',
         description: 'Successful pilot with select Credit Union partners, validating model accuracy and multi-agent workflow efficiency.'
     },
     {
-        quarter: 'Q4 2024',
+        quarter: 'Q4 2025',
         title: 'Public Launch',
         description: 'Official platform launch and opening of the waitlist for new partners across the US.'
     },
     {
-        quarter: 'Q1 2025',
+        quarter: 'Q1 2026',
         title: 'International Expansion',
         description: 'Begin expansion into underserved markets in Latin America and Southeast Asia.'
     },
     {
-        quarter: 'Q2 2025',
+        quarter: 'Q2 2026',
         title: 'Platform V2',
         description: 'Launch of enhanced no-code tools and advanced model retraining features.'
     }
