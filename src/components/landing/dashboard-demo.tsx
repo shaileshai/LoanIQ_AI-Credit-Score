@@ -28,7 +28,7 @@ const DashboardDemo = () => {
                             height={700}
                             alt="CreditIntel.AI Dashboard"
                             className="rounded-lg transition-transform duration-500 group-hover:scale-105"
-                            data-ai-hint="fintech dashboard"
+                            data-ai-hint="holographic dashboard futuristic"
                          />
                          <div className="absolute inset-0 flex items-center justify-center bg-black/40 backdrop-blur-sm rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                             <Button size="lg" className="font-bold text-lg shadow-lg shadow-accent/50" onClick={() => scrollTo('cta')}>
