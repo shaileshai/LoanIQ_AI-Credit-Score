@@ -16,14 +16,7 @@ export default function Home() {
       <Header />
       <main className="flex-1">
         <Hero />
-        <ProblemSolution />
-        <HowItWorks />
-        <DashboardDemo />
-        <Features />
-        <WhoWeServe />
-        <Compliance />
-        <Timeline />
-        <Cta />
+        
       </main>
       <Footer />
     </div>

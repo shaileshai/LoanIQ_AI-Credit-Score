@@ -13,15 +13,7 @@ const Hero = () => {
   return (
     <section id="hero" className="relative h-screen min-h-[800px] w-full flex items-center justify-center text-center overflow-hidden">
       <div className="absolute inset-0 z-0">
-        <Image
-          src="https://placehold.co/1920x1080.png"
-          alt="Cosmic background"
-          fill
-          quality={100}
-          className="object-cover opacity-20"
-          data-ai-hint="cosmic nebula"
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-background/10 via-background/50 to-background" />
+        <div className="absolute inset-0 bg-background" />
       </div>
       <div className="relative z-10 container mx-auto px-4 md:px-6 animate-fade-in-up">
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold font-headline tracking-tighter bg-clip-text text-transparent bg-gradient-to-b from-primary-foreground to-primary-foreground/70">
@@ -34,9 +26,9 @@ const Hero = () => {
         </p>
         <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
           <Button onClick={() => scrollTo('cta')} size="lg" className="font-bold text-lg shadow-lg shadow-primary/40 hover:shadow-xl hover:shadow-primary/40 transition-shadow duration-300">
-            Join the Waitlist
+            Get Started
           </Button>
-          <Button onClick={() => scrollTo('cta')} size="lg" variant="outline" className="font-bold text-lg border-accent/50 text-accent hover:bg-accent/10 hover:text-accent hover:border-accent transition-all duration-300">
+          <Button onClick={() => scrollTo('cta')} size="lg" variant="ghost" className="font-bold text-lg border-accent/50 text-accent hover:bg-accent/10 hover:text-accent hover:border-accent transition-all duration-300">
             Request a Demo
           </Button>
         </div>
