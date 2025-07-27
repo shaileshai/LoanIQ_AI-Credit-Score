@@ -4,6 +4,7 @@ import ProblemSolution from '@/components/landing/problem-solution';
 import HowItWorks from '@/components/landing/how-it-works';
 import Features from '@/components/landing/features';
 import WhoWeServe from '@/components/landing/who-we-serve';
+import WhoWeAre from '@/components/landing/who-we-are';
 import Compliance from '@/components/landing/compliance';
 import Timeline from '@/components/landing/timeline';
 import Cta from '@/components/landing/cta';
@@ -21,6 +22,7 @@ export default function Home() {
         <HowItWorks />
         <Features />
         <WhoWeServe />
+        <WhoWeAre />
         <Timeline />
         <Compliance />
         <Cta />
