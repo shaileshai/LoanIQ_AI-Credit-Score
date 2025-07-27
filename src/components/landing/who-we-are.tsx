@@ -5,7 +5,7 @@ import { Card, CardContent } from '@/components/ui/card';
 
 const teamMembers = [
   {
-    name: 'Alex Johnson',
+    name: 'Shailesh Tripathi',
     role: 'Co-Founder & CEO',
     bio: 'Visionary leader with 15+ years in fintech, passionate about leveraging AI to create equitable financial systems.',
     image: 'https://placehold.co/400x400.png',
