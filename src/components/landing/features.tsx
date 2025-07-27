@@ -22,7 +22,7 @@ const Features = () => {
         </div>
         <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {featuresList.map((feature) => (
-            <Card key={feature.title} className="bg-background/40 border-primary/20 hover:border-primary/40 hover:bg-background/60 transition-all duration-300 transform hover:-translate-y-2 shadow-lg shadow-primary/5 hover:shadow-primary/10">
+            <Card key={feature.title} className="bg-background/40 border-primary/20 hover:border-primary/40 hover:bg-background/60 transition-all duration-300 transform hover:-translate-y-2 hover:scale-105 shadow-lg shadow-primary/5 hover:shadow-primary/20">
               <CardHeader className="flex flex-col items-center text-center">
                 <div className="p-3 rounded-full bg-primary/10 mb-4 text-primary">
                   {React.cloneElement(feature.icon, { className: 'w-6 h-6 text-accent' })}

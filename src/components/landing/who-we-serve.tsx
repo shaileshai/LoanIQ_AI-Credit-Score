@@ -17,7 +17,7 @@ const WhoWeServe = () => {
                 </div>
                 <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8">
                     {clients.map(client => (
-                        <div key={client.name} className="flex flex-col items-center text-center gap-4 p-6 rounded-lg bg-background/30 hover:bg-primary/10 transition-colors border border-transparent hover:border-primary/20">
+                        <div key={client.name} className="flex flex-col items-center text-center gap-4 p-6 rounded-lg bg-background/30 hover:bg-primary/10 transition-all duration-300 border border-transparent hover:border-primary/20 hover:scale-105 hover:-translate-y-2 shadow-lg hover:shadow-primary/10">
                             {client.icon}
                             <h3 className="text-xl font-semibold">{client.name}</h3>
                         </div>
