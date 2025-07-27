@@ -23,7 +23,7 @@ const DashboardDemo = () => {
                 <Card className="mt-12 p-2 lg:p-4 bg-background/30 border-2 border-primary/20 shadow-2xl shadow-primary/10">
                     <div className="relative group overflow-hidden rounded-lg">
                          <Image
-                            src="https://firebasestudio-hosting.web.app/images/credit-intel/dashboard.png"
+                            src="https://firebasestudio-hosting.web.app/images/credit-intel/dashboard-new.png"
                             width={1200}
                             height={700}
                             alt="CreditIntel.AI Dashboard"
