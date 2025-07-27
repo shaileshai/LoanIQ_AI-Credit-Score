@@ -1,6 +1,7 @@
 "use client"
 import { Button } from '@/components/ui/button';
 import Image from 'next/image';
+import Starfield from '@/components/landing/starfield';
 
 const Hero = () => {
     const scrollTo = (id: string) => {
@@ -13,7 +14,8 @@ const Hero = () => {
   return (
     <section id="hero" className="relative h-screen min-h-[800px] w-full flex items-center justify-center text-center overflow-hidden">
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-background" />
+        <Starfield />
+        <div className="absolute inset-0 bg-background/80" />
       </div>
       <div className="relative z-10 container mx-auto px-4 md:px-6 animate-fade-in-up">
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold font-headline tracking-tighter bg-clip-text text-transparent bg-gradient-to-b from-primary-foreground to-primary-foreground/70">
