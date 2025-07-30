@@ -1,40 +1,18 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { Linkedin, Twitter } from 'lucide-react';
+import { Linkedin, Github } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 
 const teamMembers = [
   {
     name: 'Shailesh Tripathi',
     role: 'Co-Founder & CEO',
-    bio: 'Visionary leader with 15+ years in fintech, passionate about leveraging AI to create equitable financial systems.',
+    bio: 'Visionary leader with 15+ years in Fintech & Business Intelligence passionate about leveraging AI to create equitable financial systems.',
     image: 'https://placehold.co/400x400.png',
     dataAiHint: 'professional headshot',
     social: {
-      linkedin: '#',
-      twitter: '#',
-    },
-  },
-  {
-    name: 'Dr. Evelyn Reed',
-    role: 'Co-Founder & Chief Scientist',
-    bio: 'PhD in Computer Science with a focus on machine learning and ethical AI. The architect of our multi-agent system.',
-    image: 'https://placehold.co/400x400.png',
-    dataAiHint: 'scientist headshot',
-    social: {
-      linkedin: '#',
-      twitter: '#',
-    },
-  },
-  {
-    name: 'Ben Carter',
-    role: 'VP of Engineering',
-    bio: 'Expert in building scalable, secure, and compliant cloud infrastructures for the financial industry.',
-    image: 'https://placehold.co/400x400.png',
-    dataAiHint: 'engineer headshot',
-    social: {
-      linkedin: '#',
-      twitter: '#',
+      linkedin: 'https://www.linkedin.com/in/shaileshtripathi003/',
+      github: 'https://github.com/shailesht003',
     },
   },
 ];
@@ -49,9 +27,9 @@ const WhoWeAre = () => {
             We are a mission-driven team of fintech veterans, AI researchers, and security experts dedicated to building a fairer financial future.
           </p>
         </div>
-        <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="mt-16 grid grid-cols-1 md:grid-cols-1 gap-8 justify-center">
           {teamMembers.map((member) => (
-            <Card key={member.name} className="flex flex-col items-center text-center p-6 bg-background rounded-lg shadow-lg shadow-primary/5 border border-primary/10 transition-all duration-300 hover:shadow-accent/20 hover:scale-105 hover:-translate-y-2">
+            <Card key={member.name} className="flex flex-col items-center text-center p-6 bg-background rounded-lg shadow-lg shadow-primary/5 border border-primary/10 transition-all duration-300 hover:shadow-accent/20 hover:scale-105 hover:-translate-y-2 max-w-sm mx-auto">
               <Image
                 src={member.image}
                 alt={member.name}
@@ -66,7 +44,7 @@ const WhoWeAre = () => {
                 <p className="mt-2 text-foreground/70 text-sm">{member.bio}</p>
                 <div className="flex justify-center gap-4 mt-4">
                   <Link href={member.social.linkedin}><Linkedin className="w-5 h-5 text-foreground/70 hover:text-accent transition-colors" /></Link>
-                  <Link href={member.social.twitter}><Twitter className="w-5 h-5 text-foreground/70 hover:text-accent transition-colors" /></Link>
+                  <Link href={member.social.github}><Github className="w-5 h-5 text-foreground/70 hover:text-accent transition-colors" /></Link>
                 </div>
               </CardContent>
             </Card>
