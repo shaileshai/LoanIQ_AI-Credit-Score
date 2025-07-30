@@ -8,7 +8,7 @@ const teamMembers = [
     name: 'Shailesh Tripathi',
     role: 'Co-Founder & CEO',
     bio: 'Visionary leader with 15+ years in Fintech & Business Intelligence passionate about leveraging AI to create equitable financial systems.',
-    image: 'https://placehold.co/400x400.png',
+    image: 'https://storage.googleapis.com/firebasestudio-hosting/images/shailesh-tripathi.jpg',
     dataAiHint: 'professional headshot',
     social: {
       linkedin: 'https://www.linkedin.com/in/shaileshtripathi003/',
