@@ -42,14 +42,16 @@ const HowItWorks = () => {
 
           <ArrowDown className="w-8 h-8 text-primary/50" />
 
-          {/* SmartScore, Policy, News Bots */}
+          {/* SmartScore Bot */}
+          <div className="flex items-center justify-center w-48 p-4 bg-background border-2 border-primary/30 rounded-lg shadow-lg">
+            <BrainCircuit className="w-6 h-6 mr-2 text-accent" />
+            <span className="font-bold">SmartScore Bot</span>
+          </div>
+
+          <ArrowDown className="w-8 h-8 text-primary/50" />
+
+          {/* Policy, News, Interest Rate Bots */}
           <div className="flex flex-col md:flex-row items-center justify-center gap-4">
-            <div className="flex items-center justify-center p-4 bg-background border-2 border-primary/30 rounded-lg shadow-lg">
-              <BrainCircuit className="w-6 h-6 mr-2 text-accent" />
-              <span className="font-bold">SmartScore Bot</span>
-            </div>
-            <div className="text-2xl font-bold text-accent mx-4 hidden md:block">→</div>
-             <ArrowDown className="w-8 h-8 text-primary/50 md:hidden" />
             <div className="flex items-center justify-center p-4 bg-background border-2 border-primary/30 rounded-lg shadow-lg">
               <FileText className="w-6 h-6 mr-2 text-accent" />
               <span className="font-bold">Policy Bot</span>
@@ -57,22 +59,19 @@ const HowItWorks = () => {
               <Newspaper className="w-6 h-6 mr-2 text-accent" />
               <span className="font-bold">News Bot</span>
             </div>
-          </div>
-
-          <ArrowDown className="w-8 h-8 text-primary/50" />
-
-          {/* Interest Rate & Explainability Bots */}
-           <div className="flex flex-col md:flex-row items-center justify-center gap-4">
+             <ArrowDown className="w-8 h-8 text-primary/50 md:hidden" />
             <div className="flex items-center justify-center p-4 bg-background border-2 border-primary/30 rounded-lg shadow-lg">
               <Percent className="w-6 h-6 mr-2 text-accent" />
               <span className="font-bold">Interest Rate Bot</span>
             </div>
-            <div className="text-2xl font-bold text-accent mx-4 hidden md:block">→</div>
-            <ArrowDown className="w-8 h-8 text-primary/50 md:hidden" />
-            <div className="flex items-center justify-center p-4 bg-background border-2 border-primary/30 rounded-lg shadow-lg">
-              <BrainCircuit className="w-6 h-6 mr-2 text-accent" />
-              <span className="font-bold">Explainability Bot</span>
-            </div>
+          </div>
+          
+          <ArrowDown className="w-8 h-8 text-primary/50" />
+
+          {/* Explainability Bot */}
+          <div className="flex items-center justify-center w-48 p-4 bg-background border-2 border-primary/30 rounded-lg shadow-lg">
+            <BrainCircuit className="w-6 h-6 mr-2 text-accent" />
+            <span className="font-bold">Explainability Bot</span>
           </div>
 
           <ArrowDown className="w-8 h-8 text-primary/50" />
