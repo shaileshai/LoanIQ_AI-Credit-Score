@@ -6,7 +6,7 @@ import { Card, CardContent } from '@/components/ui/card';
 const teamMembers = [
   {
     name: 'Shailesh Tripathi',
-    role: 'Co-Founder & CEO',
+    role: 'Founder & CEO',
     bio: 'Visionary leader with 15+ years in Fintech & Business Intelligence passionate about leveraging AI to create equitable financial systems.',
     image: 'https://storage.googleapis.com/firebasestudio-hosting/images/shailesh-tripathi.jpg',
     dataAiHint: 'professional headshot',
