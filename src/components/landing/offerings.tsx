@@ -1,5 +1,6 @@
 import { HandCoins, Server, Archive, BrainCircuit, Plug } from 'lucide-react';
 import React from 'react';
+import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 
 const offerings = [
   {
@@ -42,19 +43,19 @@ const Offerings = () => {
             entire lending lifecycle.
           </p>
         </div>
-        <div className="mt-16 max-w-4xl mx-auto space-y-12">
+        <div className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {offerings.map((offering) => (
-            <div key={offering.title} className="flex items-start gap-6 md:gap-8">
-              <div className="flex-shrink-0">{offering.icon}</div>
-              <div>
-                <h3 className="text-xl md:text-2xl font-bold font-headline">
-                  {offering.title}
-                </h3>
-                <p className="mt-2 text-lg text-foreground/70">
-                  {offering.description}
-                </p>
-              </div>
-            </div>
+            <Card key={offering.title} className="bg-background/40 border-primary/20 hover:border-accent/40 hover:bg-background/60 transition-all duration-300 transform hover:-translate-y-2 hover:scale-105 shadow-lg shadow-primary/5 hover:shadow-accent/20 flex flex-col items-center text-center lg:col-span-1 even:lg:col-start-2 odd:lg:last:col-start-2">
+              <CardHeader className="items-center">
+                <div className="p-4 bg-primary/10 rounded-full mb-2">
+                  {offering.icon}
+                </div>
+                <CardTitle className="font-headline text-xl">{offering.title}</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-foreground/70">{offering.description}</p>
+              </CardContent>
+            </Card>
           ))}
         </div>
       </div>
