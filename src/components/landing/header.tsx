@@ -4,7 +4,22 @@ import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
-import { Bot } from 'lucide-react';
+
+const LoanIQIcon = () => (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className="w-7 h-7 text-accent"
+    >
+      <path d="M6 18l6-6-6-6" />
+      <path d="M18 18V6" />
+    </svg>
+  );
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -33,7 +48,7 @@ const Header = () => {
     >
       <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
         <Link href="/" className="flex items-center gap-2 text-2xl font-bold font-headline text-primary-foreground">
-          <Bot className="w-7 h-7 text-accent"/>
+          <LoanIQIcon />
           LoanIQ
         </Link>
         <nav className="hidden md:flex items-center space-x-6 text-sm font-medium">
