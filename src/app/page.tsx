@@ -11,6 +11,7 @@ import Faq from '@/components/landing/faq';
 import Cta from '@/components/landing/cta';
 import DashboardDemo from '@/components/landing/dashboard-demo';
 import Footer from '@/components/landing/footer';
+import Offerings from '@/components/landing/offerings';
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <main className="flex-1">
         <Hero />
         <ProblemSolution />
+        <Offerings />
         <DashboardDemo />
         <HowItWorks />
         <Features />
