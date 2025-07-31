@@ -26,7 +26,7 @@ const DashboardDemo = () => {
                             src="https://storage.googleapis.com/firebasestudio-hosting/images/credit-intel/dashboard.png"
                             width={1200}
                             height={700}
-                            alt="CreditIntel.AI Dashboard"
+                            alt="LoanIQ Dashboard"
                             className="rounded-lg transition-transform duration-500 group-hover:scale-105"
                             data-ai-hint="holographic dashboard futuristic"
                          />

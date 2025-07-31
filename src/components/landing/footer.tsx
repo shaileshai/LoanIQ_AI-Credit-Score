@@ -8,7 +8,7 @@ const Footer = () => {
                 <div className="flex items-center gap-2">
                     <Bot className="w-5 h-5 text-accent"/>
                     <p className="text-foreground/70 text-sm font-headline">
-                        CreditIntel.AI &copy; {new Date().getFullYear()}
+                        LoanIQ &copy; {new Date().getFullYear()}
                     </p>
                 </div>
                 <div className="flex items-center gap-6">

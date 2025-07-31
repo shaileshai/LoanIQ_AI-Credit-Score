@@ -31,7 +31,7 @@ const ProblemSolution = () => {
                 <CardHeader>
                     <h2 className="text-3xl md:text-4xl font-bold font-headline text-primary-foreground">The Solution: Agentic AI</h2>
                     <p className="mt-4 text-lg text-foreground/70">
-                    CreditIntel.AI uses an Agentic AI workforce to provide a dynamic, fair, and real-time assessment of creditworthiness.
+                    LoanIQ uses an Agentic AI workforce to provide a dynamic, fair, and real-time assessment of creditworthiness.
                     </p>
                 </CardHeader>
                 <CardContent>

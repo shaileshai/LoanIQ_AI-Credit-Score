@@ -3,7 +3,7 @@ import { Toaster } from "@/components/ui/toaster";
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'CreditIntel.AI: Agentic AI Credit Scoring',
+  title: 'LoanIQ: Agentic AI Credit Scoring',
   description: 'Smarter Credit Decisions. Powered by Agentic AI.',
 };
 

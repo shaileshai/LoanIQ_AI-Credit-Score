@@ -34,7 +34,7 @@ const Header = () => {
       <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
         <Link href="/" className="flex items-center gap-2 text-2xl font-bold font-headline text-primary-foreground">
           <Bot className="w-7 h-7 text-accent"/>
-          CreditIntel.AI
+          LoanIQ
         </Link>
         <nav className="hidden md:flex items-center space-x-6 text-sm font-medium">
           <button onClick={() => scrollTo('problem-solution')} className="text-foreground/80 hover:text-foreground transition-colors">Solution</button>

@@ -37,7 +37,7 @@ const Cta = () => {
         <Card className="bg-gradient-to-br from-primary/20 via-background to-accent/20 p-8 md:p-12 border-primary/30 shadow-2xl shadow-primary/10">
             <div className="text-center max-w-3xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold font-headline">Join the Movement</h2>
-            <p className="mt-4 text-lg text-foreground/70">Be among the first to access CreditIntel.AI and redefine what's possible in credit scoring. Secure your spot on the waitlist or schedule a personalized demo with our team.</p>
+            <p className="mt-4 text-lg text-foreground/70">Be among the first to access LoanIQ and redefine what's possible in credit scoring. Secure your spot on the waitlist or schedule a personalized demo with our team.</p>
             
             <Form {...form}>
                 <form onSubmit={form.handleSubmit(onSubmit)} className="mt-8 max-w-lg mx-auto flex flex-col sm:flex-row gap-4">
