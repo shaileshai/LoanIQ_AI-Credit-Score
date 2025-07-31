@@ -18,7 +18,7 @@ const Hero = () => {
         <div className="absolute inset-0 bg-background/80" />
       </div>
       <div className="relative z-10 container mx-auto px-4 md:px-6 animate-fade-in-up">
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold font-headline tracking-tighter bg-clip-text text-transparent bg-gradient-to-b from-primary-foreground to-primary-foreground/70">
+        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold font-headline tracking-tighter bg-clip-text text-transparent bg-gradient-to-b from-primary-foreground to-primary-foreground/70 py-2">
           Smarter Credit Decisions.
           <br />
           Powered by Agentic AI.
