@@ -79,7 +79,7 @@ const HowItWorks = () => {
           {/* Decision */}
           <div className="relative flex flex-col items-center">
             <div className="flex items-center justify-center p-4 bg-accent/10 border-2 border-accent rounded-lg shadow-lg shadow-accent/20">
-              <span className="font-bold text-lg text-accent-foreground">Decision?</span>
+              <span className="font-bold text-lg text-white">Decision?</span>
             </div>
 
             {/* No Path */}
