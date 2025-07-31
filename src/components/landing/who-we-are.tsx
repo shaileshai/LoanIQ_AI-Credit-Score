@@ -1,21 +1,16 @@
-import Image from 'next/image';
 import Link from 'next/link';
 import { Linkedin, Github } from 'lucide-react';
-import { Card, CardContent } from '@/components/ui/card';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
-const teamMembers = [
-  {
-    name: 'Shailesh Tripathi',
-    role: 'Founder & CEO',
-    bio: 'Visionary leader with 15+ years in Fintech & Business Intelligence passionate about leveraging AI to create equitable financial systems.',
-    image: 'https://storage.googleapis.com/firebasestudio-hosting/images/shailesh-tripathi.jpg',
-    dataAiHint: 'professional headshot',
-    social: {
-      linkedin: 'https://www.linkedin.com/in/shaileshtripathi003/',
-      github: 'https://github.com/shailesht003',
-    },
+const teamMember = {
+  name: 'Shailesh Tripathi',
+  role: 'Founder & CEO',
+  bio: 'Visionary leader with 15+ years in Fintech & Business Intelligence passionate about leveraging AI to create equitable financial systems.',
+  social: {
+    linkedin: 'https://www.linkedin.com/in/shaileshtripathi003/',
+    github: 'https://github.com/shailesht003',
   },
-];
+};
 
 const WhoWeAre = () => {
   return (
@@ -27,28 +22,24 @@ const WhoWeAre = () => {
             We are a mission-driven team of fintech veterans, AI researchers, and security experts dedicated to building a fairer financial future.
           </p>
         </div>
-        <div className="mt-16 grid grid-cols-1 md:grid-cols-1 gap-8 justify-center">
-          {teamMembers.map((member) => (
-            <Card key={member.name} className="flex flex-col items-center text-center p-6 bg-background rounded-lg shadow-lg shadow-primary/5 border border-primary/10 transition-all duration-300 hover:shadow-accent/20 hover:scale-105 hover:-translate-y-2 max-w-sm mx-auto">
-              <Image
-                src={member.image}
-                alt={member.name}
-                width={120}
-                height={120}
-                className="rounded-full mb-4 border-4 border-primary/20"
-                data-ai-hint={member.dataAiHint}
-              />
-              <CardContent className="p-0">
-                <h3 className="text-xl font-bold font-headline">{member.name}</h3>
-                <p className="text-accent font-semibold">{member.role}</p>
-                <p className="mt-2 text-foreground/70 text-sm">{member.bio}</p>
-                <div className="flex justify-center gap-4 mt-4">
-                  <Link href={member.social.linkedin}><Linkedin className="w-5 h-5 text-foreground/70 hover:text-accent transition-colors" /></Link>
-                  <Link href={member.social.github}><Github className="w-5 h-5 text-foreground/70 hover:text-accent transition-colors" /></Link>
-                </div>
-              </CardContent>
-            </Card>
-          ))}
+        <div className="mt-16 max-w-2xl mx-auto">
+          <Card className="bg-background/40 border-primary/20 shadow-xl shadow-primary/10 overflow-hidden">
+            <div className="p-6 md:p-8">
+              <h3 className="text-2xl font-bold font-headline">{teamMember.name}</h3>
+              <p className="text-accent font-semibold mt-1">{teamMember.role}</p>
+              <p className="mt-4 text-foreground/80 leading-relaxed">
+                {teamMember.bio}
+              </p>
+              <div className="flex gap-4 mt-6">
+                <Link href={teamMember.social.linkedin} target="_blank" rel="noopener noreferrer" className="text-foreground/70 hover:text-accent transition-colors">
+                  <Linkedin className="w-6 h-6" />
+                </Link>
+                <Link href={teamMember.social.github} target="_blank" rel="noopener noreferrer" className="text-foreground/70 hover:text-accent transition-colors">
+                  <Github className="w-6 h-6" />
+                </Link>
+              </div>
+            </div>
+          </Card>
         </div>
       </div>
     </section>
