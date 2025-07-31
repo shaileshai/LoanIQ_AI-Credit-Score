@@ -9,8 +9,8 @@ import Compliance from '@/components/landing/compliance';
 import Timeline from '@/components/landing/timeline';
 import Faq from '@/components/landing/faq';
 import Cta from '@/components/landing/cta';
-import Footer from '@/components/landing/footer';
 import DashboardDemo from '@/components/landing/dashboard-demo';
+import Footer from '@/components/landing/footer';
 
 export default function Home() {
   return (
