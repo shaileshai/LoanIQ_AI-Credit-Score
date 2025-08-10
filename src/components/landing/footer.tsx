@@ -7,13 +7,15 @@ const LoanIQIcon = () => (
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
-      strokeWidth="2"
+      strokeWidth="1.5"
       strokeLinecap="round"
       strokeLinejoin="round"
       className="w-5 h-5 text-accent"
     >
-      <path d="M6 18l6-6-6-6" />
-      <path d="M18 18V6" />
+      <path d="M12 2L2 7L12 12L22 7L12 2Z" />
+      <path d="M2 17L12 22L22 17" />
+      <path d="M2 12L12 17L22 12" />
+      <circle cx="12" cy="12" r="2" />
     </svg>
   );
 

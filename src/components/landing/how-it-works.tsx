@@ -3,11 +3,15 @@ import { ArrowDown, Bot, Check, Search, BarChart, Users, FileText, Newspaper, Sc
 
 const HowItWorks = () => {
   return (
-    <section id="how-it-works" className="py-20 md:py-32 bg-background/50">
+    <section id="how-it-works" className="py-20 md:py-32 bg-gradient-to-br from-background via-primary/5 to-accent/5">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="text-center max-w-3xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold font-headline">A Glimpse Into the Future of Credit Scoring</h2>
-          <p className="mt-4 text-lg text-foreground/70">Our multi-agent system works in concert to deliver unprecedented speed, accuracy, and fairness to credit decisions.</p>
+        <div className="max-w-4xl mx-auto text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold font-headline bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent mb-6">
+            Agentic AI Workflow
+          </h2>
+          <p className="text-xl text-foreground/70 max-w-3xl mx-auto leading-relaxed">
+            Our multi-agent system works in concert to deliver unprecedented speed, accuracy, and fairness to credit decisions.
+          </p>
         </div>
         
         <div className="mt-16 flex flex-col items-center gap-4 text-center font-sans">

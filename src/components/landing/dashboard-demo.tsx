@@ -33,7 +33,7 @@ const DashboardDemo = () => {
     return (
         <section id="dashboard-demo" className="py-20 md:py-32">
             <div className="container mx-auto px-4 md:px-6 text-center">
-                <h2 className="text-3xl md:text-4xl font-bold font-headline">No-Code Dashboards for Underwriters</h2>
+                <h2 className="text-3xl md:text-4xl font-bold font-headline bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">No-Code Dashboards for Underwriters</h2>
                 <p className="mt-4 max-w-3xl mx-auto text-lg text-foreground/70">
                     Intuitive, real-time dashboards that empower your team to understand the 'why' behind every decision without writing a single line of code.
                 </p>
@@ -44,7 +44,7 @@ const DashboardDemo = () => {
                                 <div className="p-4 bg-primary/10 rounded-full mb-4">
                                     {feature.icon}
                                 </div>
-                                <CardTitle>{feature.title}</CardTitle>
+                                <CardTitle className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">{feature.title}</CardTitle>
                             </CardHeader>
                             <CardContent>
                                 <p className="text-foreground/70">{feature.description}</p>

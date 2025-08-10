@@ -26,7 +26,7 @@ const Timeline = () => {
         <section id="timeline" className="py-20 md:py-32">
             <div className="container mx-auto px-4 md:px-6">
                 <div className="text-center max-w-3xl mx-auto">
-                    <h2 className="text-3xl md:text-4xl font-bold font-headline">Our Roadmap to Revolutionize Credit</h2>
+                    <h2 className="text-3xl md:text-4xl font-bold font-headline bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Our Roadmap to Revolutionize Credit</h2>
                 </div>
                 <div className="mt-16 max-w-4xl mx-auto">
                     <div className="relative grid gap-y-12 after:absolute after:inset-y-0 after:w-1 after:bg-primary/20 after:left-4 md:after:left-1/2 md:after:-translate-x-1/2">

@@ -32,32 +32,73 @@ const Cta = () => {
   }
 
   return (
-    <section id="cta" className="py-20 md:py-32 bg-background/50">
+    <section id="cta" className="py-20 md:py-32 bg-gradient-to-br from-background via-primary/5 to-accent/5">
       <div className="container mx-auto px-4 md:px-6">
-        <Card className="bg-gradient-to-br from-primary/20 via-background to-accent/20 p-8 md:p-12 border-primary/30 shadow-2xl shadow-primary/10">
-            <div className="text-center max-w-3xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold font-headline">Join the Movement</h2>
-            <p className="mt-4 text-lg text-foreground/70">Be among the first to access LoanIQ and redefine what's possible in credit scoring. Secure your spot on the waitlist or schedule a personalized demo with our team.</p>
-            
-            <Form {...form}>
-                <form onSubmit={form.handleSubmit(onSubmit)} className="mt-8 max-w-lg mx-auto flex flex-col sm:flex-row gap-4">
-                <FormField
+        <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <h2 className="text-4xl md:text-5xl font-bold font-headline bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent mb-6">
+              Experience the Future of Credit
+            </h2>
+            <p className="text-xl text-foreground/70 leading-relaxed">
+              See how LoanIQ AI transforms credit decisions with real-time insights, transparent scoring, and unprecedented accuracy. 
+              Get hands-on with our interactive demo and discover what smarter lending looks like.
+            </p>
+            <div className="mt-8 space-y-4">
+              <div className="flex items-start gap-3">
+                <div className="w-2 h-2 rounded-full bg-accent mt-2 flex-shrink-0"></div>
+                <p className="text-foreground/80">Live dashboard simulation with real AI agents</p>
+              </div>
+              <div className="flex items-start gap-3">
+                <div className="w-2 h-2 rounded-full bg-accent mt-2 flex-shrink-0"></div>
+                <p className="text-foreground/80">Personalized walkthrough with our experts</p>
+              </div>
+              <div className="flex items-start gap-3">
+                <div className="w-2 h-2 rounded-full bg-accent mt-2 flex-shrink-0"></div>
+                <p className="text-foreground/80">No commitment required</p>
+              </div>
+            </div>
+          </div>
+          
+          <Card className="bg-background/50 backdrop-blur-sm border-primary/20 p-8 md:p-10">
+            <h3 className="text-2xl font-bold mb-6">Ready to Get Started?</h3>
+            <div className="space-y-4">
+              <Button 
+                onClick={() => window.location.href = '/Dashboard'}
+                size="lg" 
+                className="w-full h-12 text-lg font-bold bg-gradient-to-r from-green-400 to-emerald-500 hover:from-green-500 hover:to-emerald-600 shadow-lg shadow-green-400/40 hover:shadow-xl hover:shadow-green-400/40 transition-all duration-300 transform hover:scale-105">
+                Launch Interactive Demo
+              </Button>
+              
+              <Form {...form}>
+                <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
+                  <FormField
                     control={form.control}
                     name="email"
                     render={({ field }) => (
-                    <FormItem className="flex-grow">
-                        <FormControl>
-                        <Input placeholder="Enter your business email" {...field} className="h-12 text-lg bg-background/80 focus:ring-accent" />
-                        </FormControl>
-                        <FormMessage />
+                    <FormItem>
+                      <FormControl>
+                        <Input 
+                          placeholder="Enter your business email" 
+                          {...field} 
+                          className="h-12 bg-background/80 focus:ring-2 focus:ring-accent" 
+                        />
+                      </FormControl>
+                      <FormMessage />
                     </FormItem>
                     )}
-                />
-                <Button type="submit" size="lg" className="h-12 text-lg font-bold shadow-lg shadow-primary/40 hover:shadow-xl hover:shadow-primary/40 transition-shadow">Join Waitlist</Button>
+                  />
+                  <Button type="submit" variant="secondary" className="w-full h-12 font-semibold">
+                    Schedule Expert Demo
+                  </Button>
                 </form>
-            </Form>
+              </Form>
+              
+              <p className="text-center text-sm text-foreground/60">
+                Join 500+ financial institutions already transforming their lending
+              </p>
             </div>
-        </Card>
+          </Card>
+        </div>
       </div>
     </section>
   );

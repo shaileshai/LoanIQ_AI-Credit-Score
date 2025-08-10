@@ -25,14 +25,16 @@ const faqItems = [
 
 const Faq = () => {
     return (
-        <section id="faq" className="py-20 md:py-32">
-            <div className="container mx-auto px-4 md:px-6">
-                <div className="text-center max-w-3xl mx-auto">
-                    <h2 className="text-3xl md:text-4xl font-bold font-headline">Frequently Asked Questions</h2>
-                    <p className="mt-4 text-lg text-foreground/70">
-                        Have questions? We have answers. Here are some of the most common queries we receive.
-                    </p>
-                </div>
+        <section id="faq" className="py-20 md:py-32 bg-gradient-to-br from-background via-primary/5 to-accent/5">
+          <div className="container mx-auto px-4 md:px-6">
+            <div className="text-center max-w-3xl mx-auto mb-12">
+              <h2 className="text-4xl md:text-5xl font-bold font-headline bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent mb-6">
+                Frequently Asked Questions
+              </h2>
+              <p className="text-xl text-foreground/70 leading-relaxed">
+                Have questions? We have answers. Here are some of the most common queries we receive.
+              </p>
+            </div>
                 <div className="mt-12 max-w-3xl mx-auto">
                     <Accordion type="single" collapsible className="w-full">
                         {faqItems.map((item, index) => (

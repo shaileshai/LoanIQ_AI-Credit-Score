@@ -17,7 +17,7 @@ const WhoWeAre = () => {
     <section id="who-we-are" className="py-20 md:py-32 bg-background/50">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center max-w-3xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold font-headline">The Team Behind the Innovation</h2>
+          <h2 className="text-3xl md:text-4xl font-bold font-headline bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">The Team Behind the Innovation</h2>
           <p className="mt-4 text-lg text-foreground/70">
             We are a mission-driven team of fintech veterans, AI researchers, and security experts dedicated to building a fairer financial future.
           </p>
@@ -25,7 +25,7 @@ const WhoWeAre = () => {
         <div className="mt-16 max-w-2xl mx-auto">
           <Card className="bg-background/40 border-primary/20 shadow-xl shadow-primary/10 overflow-hidden">
             <div className="p-6 md:p-8">
-              <h3 className="text-2xl font-bold font-headline">{teamMember.name}</h3>
+              <h3 className="text-2xl font-bold font-headline bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">{teamMember.name}</h3>
               <p className="text-accent font-semibold mt-1">{teamMember.role}</p>
               <p className="mt-4 text-foreground/80 leading-relaxed">
                 {teamMember.bio}

@@ -12,7 +12,7 @@ const WhoWeServe = () => {
         <section id="who-we-serve" className="py-20 md:py-32">
             <div className="container mx-auto px-4 md:px-6">
                 <div className="text-center max-w-3xl mx-auto">
-                    <h2 className="text-3xl md:text-4xl font-bold font-headline">Empowering the Financial Ecosystem</h2>
+                    <h2 className="text-3xl md:text-4xl font-bold font-headline bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Empowering the Financial Ecosystem</h2>
                     <p className="mt-4 text-lg text-foreground/70">We partner with forward-thinking institutions dedicated to expanding financial access and inclusion.</p>
                 </div>
                 <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8">
